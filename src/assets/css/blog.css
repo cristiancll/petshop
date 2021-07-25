@@ -1,0 +1,24 @@
+.list-categories {
+    width: 100%;
+    box-sizing: border-box;
+    justify-content: space-evenly;
+    margin-bottom: 2rem;
+}
+
+.list-categories_category {
+    font-weight: var(--font-weight-categories);
+    background-color: var(--light-contrast-color);
+    border-radius: 3rem;
+    padding: 1rem;
+}
+
+.list-categories_category-well-being {
+    color: var(--light-contrast-color);
+    background-color: var(--color-category-well-being);
+}
+
+.list-categories_category-behaviour {
+    color: var(--light-contrast-color);
+    background-color: var(--color-category-behaviour);
+}
+
