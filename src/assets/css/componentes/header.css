@@ -24,8 +24,8 @@
     display: block;
     width: 100%;
     height: 100%;
-    background-image: url(src/assets/img/menu.svg);
     background-size: contain;
+    background-image: url(../../img/menu.svg);
 }
 
 .header_logo {
@@ -134,7 +134,7 @@
         display: none;
     }
 
-    .menu-itens {
+    .menu-items {
         display: flex;
         align-items: center;
     }
