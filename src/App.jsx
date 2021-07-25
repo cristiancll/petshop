@@ -1,20 +1,23 @@
 import React from 'react'
 import './assets/css/base/base.css'
-import Home from "./paginas/Home";
+import {BrowserRouter as Router, Route, Switch, Link} from "react-router-dom";
 import About from "./paginas/About";
+import Home from "./paginas/Home";
 
 function App() {
-  
-  const Router = () => {
-    const location = window.location.pathname;
-    if(location === '/about') return <About/>
-    return <Home/>
-  };
-  return (
-  <>
-    {Router()}
-  </>
-  )
+
+    return (
+        <Router>
+            <Switch>
+                <Route exact path="/">
+                    <Home/>
+                </Route>
+                <Route path="/about">
+                    <About/>
+                </Route>
+            </Switch>
+        </Router>
+    );
 }
 
 export default App
