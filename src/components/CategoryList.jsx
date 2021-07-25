@@ -3,12 +3,12 @@ import {fetch} from "../api/api";
 import '../assets/css/blog.css'
 import {Link} from "react-router-dom";
 
-const CategoryList = ({url}) => {
+const CategoryList = () => {
     const [categories, setCategories] = useState([]);
     
     useEffect(() => {
-        fetch(url, setCategories);
-    }, [url]);
+        fetch(`/categories`, setCategories);
+    }, []);
     
     return (
         <ul className="list-categories container flex">

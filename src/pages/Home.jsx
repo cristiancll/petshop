@@ -6,9 +6,9 @@ const Home = () => {
     return (
         <main>
             <div className="container">
-                <h2 className="page-title">Pet notícias</h2>
+                <h2 className="page-title">Pet Notícias</h2>
             </div>
-            <CategoryList url={'/categories'}/>
+            <CategoryList/>
             <PostList url={'/posts'}/>
         </main>
     )

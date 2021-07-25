@@ -3,12 +3,18 @@
     {
       "id": "well-being",
       "name": "Bem-Estar",
-      "subcategories": ["hygiene", "health"]
+      "subcategories": [
+        {"id": "hygiene", "name": "Higiene"},
+        {"id": "health", "name": "Saúde"}
+      ]
     },
     {
       "id": "behaviour",
       "name": "Comportamento",
-      "subcategories": ["training", "education"]
+      "subcategories": [
+        {"id": "training", "name": "Treinamento"},
+        {"id": "education", "name": "Educação"}
+      ]
     }
   ],
   "posts": [
